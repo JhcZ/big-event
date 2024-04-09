@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/big_event
+    username: root
+    password: 123456
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password: 123321
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true  #开启属性的驼峰命名和下划线分割命名的相互映射
