@@ -1,14 +1,14 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/big_event
-    username: root
-    password: 123456
+    url: 
+    username: 
+    password: 
   data:
     redis:
-      host: 127.0.0.1
-      port: 6379
-      password: 123321
+      host: 
+      port: 
+      password: 
 
 mybatis:
   configuration:
