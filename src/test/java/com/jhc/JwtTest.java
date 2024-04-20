@@ -28,7 +28,7 @@ public class JwtTest {
         String token =  JWT.create()
                 .withClaim("user",claims)  //添加载荷，用户自己自定义的信息
                 .withExpiresAt(new Date(System.currentTimeMillis() + 1000*60*60*12))  //设置令牌验证的超时时间
-                .sign(Algorithm.HMAC256("jhc"));  //指定生成算法并配置相关密钥
+                    .sign(Algorithm.HMAC256("jhc"));  //指定生成算法并配置相关密钥
 
         System.out.println(token);
     }
